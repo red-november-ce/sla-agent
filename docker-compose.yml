@@ -1,0 +1,16 @@
+services:
+  sla-agent:
+    image: sla-agent:latest                     
+    container_name: sla-agent                   
+    environment:
+      TARGET_HOSTS: '["8.8.8.8", "1.1.1.1"]'     
+      PING_INTERVAL: "60"                       
+      SLA_THRESHOLD: "99"                       
+    ports:
+      - "5000:5000"                              
+    volumes:
+      - ./data:/app/instance                    
+
+networks:
+  default:
+    driver: bridge                              
