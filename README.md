@@ -44,4 +44,4 @@ docker run -d -p 5000:5000 \
 
 ## 👤 Author red-november-ce
 🔗 GitHub: github.com/red-november-ce
-🐳 Docker Hub: hub.docker.com/rednovember/sla-agent
+🐳 Docker Hub: hub.docker.com/r/rednovember/sla-agent
